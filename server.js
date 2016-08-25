@@ -21,6 +21,6 @@ server.get('/dockertest', function(req, res){
 
 server.use(express.static('client'));
 
-server.listen(process.env.NODE_PORT || 3000, function() {
-    console.log('EC2 waiting for instruction on',process.env.NODE_PORT);
+server.listen(8080, function() {
+    console.log('EC2 waiting for instruction on');
 });
